@@ -1,0 +1,56 @@
+Sure, here are the steps for running the provided program in a notepad text:
+
+1. **Environment Setup:**
+   - Create a new project directory for your face recognition program.
+   - Open your terminal or command prompt.
+
+2. **Create a Virtual Environment:**
+   - Run the following commands to create a virtual environment named 'venv' and activate it:
+     ```
+     python -m venv venv
+     .\venv\Scripts\activate
+     ```
+   - Your virtual environment is now active, and you'll see the environment name in your command prompt.
+
+3. **Create a `requirements.txt` File:**
+   - Create a file named `requirements.txt` in your project directory.
+   - Add the following package names to the `requirements.txt` file:
+     ```
+     opencv-python
+     tensorflow
+     numpy
+     matplotlib
+     argparse
+     ```
+   - Save the `requirements.txt` file.
+
+4. **Install Required Packages:**
+   - In your terminal with the virtual environment activated, run the following command to install the packages from the `requirements.txt` file:
+     ```
+     pip install -r requirements.txt
+     ```
+
+5. **Collect Face Images (Optional):**
+   - If you want to collect your own face images for training, run the program in "image_collect" mode:
+     ```
+     python your_program.py --mode image_collect
+     ```
+
+6. **Train the Model:**
+   - Train the face recognition model in "train" mode using the following command:
+     ```
+     python your_program.py --mode train
+     ```
+
+7. **Recognize Faces:**
+   - Use the trained model to recognize faces in "start" mode using this command:
+     ```
+     python your_program.py --mode start
+     ```
+
+These steps will help you set up your environment, install the necessary packages, collect face images if desired, train the model, and then use it for face recognition. Make sure to replace "your_program.py" with the actual filename of your Python script containing the provided code.
+
+
+** please put the data in a proper directory **
+
+Before running the face recognition program, ensure that your dataset is well-organized and located in a proper directory. The dataset should include face images that are labeled or categorized as needed for your application. Organize the data into subdirectories based on categories or labels, such as 'defined user' and 'undefined user,' if applicable. Proper dataset organization is crucial for training and testing the model effectively. Make sure that your dataset is located in a directory structure that matches the expected input format of the program. This ensures accurate training and reliable face recognition results.
